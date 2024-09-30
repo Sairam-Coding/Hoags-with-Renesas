@@ -1,0 +1,6 @@
+-MAKEUD="C:\Users\admin\e2_studio\RL78_G16_CapTouch\HardwareDebug\\RL78_G16_CapTouch_c.ud" 
+-form=stype 
+-output="RL78_G16_CapTouch.mot" 
+-byte_count=10 
+-nomessage 
+-nologo

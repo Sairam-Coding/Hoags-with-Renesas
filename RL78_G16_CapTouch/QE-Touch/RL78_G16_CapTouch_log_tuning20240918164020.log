@@ -1,0 +1,152 @@
+***** 2024/09/18 16:40:20 *****
+QE Version                                        :3.5.0.v20240521-0407
+Project Path                                      :C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch
+Configuration File                                :RL78_G16_CapTouch
+<< METHOD 0 >>
+[Button(self) 0]
+TS                                                : TS01,
+[Button(self) 1]
+TS                                                : TS02,
+[Button(self) 2]
+TS                                                : TS10,
+[Button(self) 3]
+TS                                                : TS11,
+[Button(self) 4]
+TS                                                : TS13,
+[Button(self) 5]
+TS                                                : TS14,
+
+<<<< Tuning Type : Normal >>>>
+System Clock Frequency (MHz)                      :16.000
+PCLKB Frequency (MHz)                             :16.000
+CTSU Operating Frequency (MHz)                    :16.000
+Operating Voltage (V)                             :4.000
+
+---------- Phase1 ----------
+<< METHOD 0 >>
+[TS01]
+Measurement Value                                 : 15067
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 37.487305
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS02]
+Measurement Value                                 : 14554
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 36.210938
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS10]
+Measurement Value                                 : 14715
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 36.611515
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS11]
+Measurement Value                                 : 13825
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 34.39716
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS13]
+Measurement Value                                 : 12785
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 31.809595
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+[TS14]
+Measurement Value                                 : 13659
+Resistance Value (ohm)                            : 560
+Parasitic Capacitance (pF)                        : 33.984142
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+
+
+---------- Phase2 ----------
+<< METHOD 0 >>
+[TS01]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 279
+
+[TS02]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 268
+
+[TS10]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 272
+
+[TS11]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 249
+
+[TS13]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 226
+
+[TS14]
+Sensor Drive Pulse Frequency (MHz)                : 1.0
+CTSUSNUM                                          : 1
+CTSUSSDIV                                         : 3
+CTSUSDPA                                          : 7
+CTSUSO                                            : 245
+
+
+---------- Phase3 ----------
+<< METHOD 0 >>
+[Button(self) 0]
+  << TS01 >>
+  Measurement Value (Off)                         : 15441
+  Measurement Value (On)                          : 36002
+  Threshold                                       : 12336
+  Hysteresis                                      : 616
+
+[Button(self) 1]
+  << TS02 >>
+  Measurement Value (Off)                         : 15281
+  Measurement Value (On)                          : 28471
+  Threshold                                       : 7914
+  Hysteresis                                      : 395
+
+[Button(self) 2]
+  << TS10 >>
+  Measurement Value (Off)                         : 15408
+  Measurement Value (On)                          : 28892
+  Threshold                                       : 8090
+  Hysteresis                                      : 404
+
+[Button(self) 3]
+  << TS11 >>
+  Measurement Value (Off)                         : 15280
+  Measurement Value (On)                          : 18015
+  Threshold                                       : 1641
+  Hysteresis                                      : 82
+
+[Button(self) 4]
+  << TS13 >>
+  Measurement Value (Off)                         : 15289
+  Measurement Value (On)                          : 31021
+  Threshold                                       : 9439
+  Hysteresis                                      : 471
+
+[Button(self) 5]
+  << TS14 >>
+  Measurement Value (Off)                         : 15429
+  Measurement Value (On)                          : 29310
+  Threshold                                       : 8328
+  Hysteresis                                      : 416
+

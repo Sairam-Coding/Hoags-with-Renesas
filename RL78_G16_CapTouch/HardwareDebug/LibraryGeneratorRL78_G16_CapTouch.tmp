@@ -1,0 +1,6 @@
+-MAKEUD_LBG="C:\Users\admin\e2_studio\RL78_G16_CapTouch\HardwareDebug\RL78_G16_CapTouch_lbg.ud" 
+-cpu=S2 
+-use_mda=not_use 
+-output=RL78_G16_CapTouch.lib 
+-nologo 
+-lang=c99
