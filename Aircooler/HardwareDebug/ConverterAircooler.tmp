@@ -1,0 +1,6 @@
+-MAKEUD="D:\AirCooler\Aircooler\HardwareDebug\\Aircooler_c.ud" 
+-form=stype 
+-output="Aircooler.mot" 
+-byte_count=10 
+-nomessage 
+-nologo

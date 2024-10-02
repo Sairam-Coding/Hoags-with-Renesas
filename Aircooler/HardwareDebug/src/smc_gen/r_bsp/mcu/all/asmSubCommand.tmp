@@ -1,0 +1,16 @@
+-cpu=S2
+-use_mda=not_use
+-c
+-dev="C:/Users/Admin/.eclipse/com.renesas.platform_1435879475/DebugComp/RL78/RL78/Common/DR5F121BC.DVF"
+-MAKEUD="D:\AirCooler\Aircooler\HardwareDebug\src\smc_gen\r_bsp\mcu\all"
+-I "D:\AirCooler\Aircooler\src\smc_gen\r_bsp"
+-I "D:\AirCooler\Aircooler\src\smc_gen\r_pincfg"
+-I "D:\AirCooler\Aircooler\src\smc_gen"
+-I "D:\AirCooler\Aircooler\src\smc_gen\r_config"
+-I "D:\AirCooler\Aircooler\src\smc_gen\general"
+-I "D:\AirCooler\Aircooler\src\smc_gen\Config_INTC"
+-I "D:\AirCooler\Aircooler\src\smc_gen\Config_UART0"
+-I "D:\AirCooler\Aircooler\src\smc_gen\Config_PORT"
+-I "D:\AirCooler\Aircooler\src\smc_gen\Config_TAU0_0"
+-character_set=utf8
+-g

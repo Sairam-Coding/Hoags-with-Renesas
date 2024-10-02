@@ -1,0 +1,615 @@
+Renesas Optimizing Linker (W3.07.00 )             17-Sep-2024 18:24:04
+
+*** Options ***
+
+-subcommand=LinkerAircooler.tmp
+-MAKEUD="D:\AirCooler\Aircooler\HardwareDebug/Aircooler_l.ud" 
+-device="C:/Users/Admin/.eclipse/com.renesas.platform_1435879475/DebugComp/RL78/RL78/Common/DR5F121BC.DVF" 
+-list 
+-show=symbol 
+-nooptimize 
+-entry=_start 
+-auto_section_layout 
+-security_id=00000000000000000000 
+-rrm=FF700 
+-debug_monitor=0-0 
+-user_opt_byte=EFF7F9 
+-ocdbg=85 
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\stkinit.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\cstart.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common_ccrl.obj"
+-input=".\src\aircooler.obj"
+-input=".\src\main.obj"
+-input=".\src/smc_gen/Config_INTC\Config_INTC.obj"
+-input=".\src/smc_gen/Config_INTC\Config_INTC_user.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/Config_TAU0_0\Config_TAU0_0.obj"
+-input=".\src/smc_gen/Config_TAU0_0\Config_TAU0_0_user.obj"
+-input=".\src/smc_gen/Config_UART0\Config_UART0.obj"
+-input=".\src/smc_gen/Config_UART0\Config_UART0_user.obj"
+-input=".\src/smc_gen/general\r_cg_sau_common.obj"
+-input=".\src/smc_gen/general\r_cg_systeminit.obj"
+-input=".\src/smc_gen/general\r_cg_tau_common.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\hdwinit.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\r_bsp_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rl78_g16\mcu_clocks.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-library=".\Aircooler.lib"
+-output="Aircooler.abs" 
+-debug 
+-nocompress 
+-memory=high 
+-rom=.data=.dataR,.sdata=.sdataR 
+-nomessage 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000093        14   2
+.init_array
+                                  00000094  00000094         0   2
+.sdata
+                                  00000080  00000080         0   2
+.data
+                                  00000094  00000099         6   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.RLIB
+                                  000000c4  000000c4         0   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.text
+                                  000000d8  00000254       17d   1
+.const
+                                  00000800  000009f7       1f8   2
+.textf
+                                  000009f8  0000143a       a43   1
+.SLIB
+                                  0000143b  00003c16      27dc   1
+.rrm
+                                  000ff700  000ff703         4   1
+.bss
+                                  000ff704  000ff883       180   2
+.dataR
+                                  000ff884  000ff889         6   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+.sdataR
+                                  000ffe20  000ffe20         0   2
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_05
+                                  00000000  0000007f        80
+
+SECTION=.constf
+FILE=_REL_print
+                                  00000080  00000093        14
+
+SECTION=.data
+FILE=.\src\aircooler.obj
+                                  00000094  00000094         1
+FILE=.\src\main.obj
+                                  00000096  00000099         4
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_04
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000ce  000000d7         a
+
+SECTION=.text
+FILE=.\src\smc_gen\r_bsp\mcu\all\cstart.obj
+                                  000000d8  0000014e        77
+  _start
+                                  000000d8         0   entry,g         * 
+  _exit
+                                  0000014c         0   none ,g         * 
+  _atexit
+                                  0000014e         0   none ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common_ccrl.obj
+                                  0000014f  0000015a         c
+  _delay_wait
+                                  0000014f         0   none ,g         * 
+  loop
+                                  0000014f         0   none ,l         * 
+  check
+                                  00000156         0   none ,l         * 
+  _exit
+                                  0000015a         0   none ,l         * 
+FILE=.\src\aircooler.obj
+                                  0000015b  00000177        1d
+  _Timer_ISR@1
+                                  0000015b        1d   func ,l         * 
+FILE=.\src\smc_gen\Config_INTC\Config_INTC_user.obj
+                                  00000178  000001b7        40
+  _r_Config_INTC_intp8_interrupt@1
+                                  00000178        40   func ,l         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0_user.obj
+                                  000001b8  00000254        9d
+  _r_Config_UART0_interrupt_send@1
+                                  000001b8        2f   func ,l         * 
+  _r_Config_UART0_interrupt_receive@1
+                                  000001e7        40   func ,l         * 
+  _r_Config_UART0_interrupt_error@1
+                                  00000227        2e   func ,l         * 
+
+SECTION=.const
+FILE=.\src\aircooler.obj
+                                  00000800  000009b7       1b8
+FILE=.\src\main.obj
+                                  000009b8  000009bf         8
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  000009c0  000009d7        18
+  _g_bsp_delay_time
+                                  000009c0        18   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rl78_g16\mcu_clocks.obj
+                                  000009d8  000009f7        20
+  _g_fih_hz
+                                  000009d8        20   data ,g         * 
+
+SECTION=.textf
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\stkinit.obj
+                                  000009f8  00000a3b        44
+  _stkinit
+                                  000009f8         0   none ,g         * 
+  LSTINIT1
+                                  00000a06         0   none ,l         * 
+  LSTINIT2
+                                  00000a30         0   none ,l         * 
+  LSTINIT3
+                                  00000a3b         0   none ,l         * 
+FILE=.\src\aircooler.obj
+                                  00000a3c  00000ec6       48b
+  _resetpins
+                                  00000a3c        13   func ,g         * 
+  _modeAction
+                                  00000a4f        75   func ,g         * 
+  _speedAction
+                                  00000ac4        78   func ,g         * 
+  _readModePin
+                                  00000b3c        30   func ,g         * 
+  _readSpeedPin
+                                  00000b6c        2a   func ,g         * 
+  _Timer_Init
+                                  00000b96        25   func ,g         * 
+  _Get_Current_Time_us
+                                  00000bbb        25   func ,g         * 
+  _processData
+                                  00000be0       133   func ,g         * 
+  _print
+                                  00000d13        15   func ,g         * 
+  __strlen
+                                  00000d28         c   func ,g         * 
+  _irAction
+                                  00000d34       193   func ,g         * 
+FILE=.\src\main.obj
+                                  00000ec7  00000f59        93
+  _main
+                                  00000ec7        93   func ,g         * 
+FILE=.\src\smc_gen\Config_INTC\Config_INTC.obj
+                                  00000f5a  00000f83        2a
+  _R_Config_INTC_Create
+                                  00000f5a        1c   func ,g         * 
+  _R_Config_INTC_INTP8_Start
+                                  00000f76         7   func ,g         * 
+  _R_Config_INTC_INTP8_Stop
+                                  00000f7d         7   func ,g         * 
+FILE=.\src\smc_gen\Config_INTC\Config_INTC_user.obj
+                                  00000f84  00000f84         1
+  _R_Config_INTC_Create_UserInit
+                                  00000f84         1   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT.obj
+                                  00000f85  00000f88         4
+  _R_Config_PORT_Create
+                                  00000f85         4   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT_user.obj
+                                  00000f89  00000faa        22
+  _R_Config_PORT_Create_UserInit
+                                  00000f89        22   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0.obj
+                                  00000fab  0000100b        61
+  _R_Config_TAU0_0_Create
+                                  00000fab        41   func ,g         * 
+  _R_Config_TAU0_0_Start
+                                  00000fec        10   func ,g         * 
+  _R_Config_TAU0_0_Stop
+                                  00000ffc        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.obj
+                                  0000100c  0000100c         1
+  _R_Config_TAU0_0_Create_UserInit
+                                  0000100c         1   func ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0.obj
+                                  0000100d  0000114b       13f
+  _R_Config_UART0_Create
+                                  0000100d        a8   func ,g         * 
+  _R_Config_UART0_Start
+                                  000010b5        2c   func ,g         * 
+  _R_Config_UART0_Stop
+                                  000010e1        24   func ,g         * 
+  _R_Config_UART0_Send
+                                  00001105        2f   func ,g         * 
+  _R_Config_UART0_Receive
+                                  00001134        18   func ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0_user.obj
+                                  0000114c  00001153         8
+  _R_Config_UART0_Create_UserInit
+                                  0000114c         1   func ,g         * 
+  _r_Config_UART0_callback_sendend@1
+                                  0000114d         4   func ,l         * 
+  _r_Config_UART0_callback_receiveend@1
+                                  00001151         1   func ,l         * 
+  _r_Config_UART0_callback_error@1
+                                  00001152         1   func ,l         * 
+  _r_Config_UART0_callback_softwareoverrun@1
+                                  00001153         1   func ,l         * 
+FILE=.\src\smc_gen\general\r_cg_sau_common.obj
+                                  00001154  00001174        21
+  _R_SAU0_Create
+                                  00001154         8   func ,g         * 
+  _R_SAU1_Create
+                                  0000115c         5   func ,g         * 
+  _R_SAU0_Set_PowerOn
+                                  00001161         5   func ,g         * 
+  _R_SAU0_Set_PowerOff
+                                  00001166         5   func ,g         * 
+  _R_SAU1_Set_PowerOn
+                                  0000116b         5   func ,g         * 
+  _R_SAU1_Set_PowerOff
+                                  00001170         5   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_systeminit.obj
+                                  00001175  00001184        10
+  _R_Systeminit
+                                  00001175        10   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_tau_common.obj
+                                  00001185  00001196        12
+  _R_TAU0_Create
+                                  00001185         8   func ,g         * 
+  _R_TAU0_Set_PowerOn
+                                  0000118d         5   func ,g         * 
+  _R_TAU0_Set_PowerOff
+                                  00001192         5   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\hdwinit.obj
+                                  00001197  000011a0         a
+  _hdwinit
+                                  00001197         a   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\r_bsp_init.obj
+                                  000011a1  000011c0        20
+  _bsp_init_system
+                                  000011a1        1c   func ,g         * 
+  _bsp_init_hardware
+                                  000011bd         4   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  000011c1  000013c6       206
+  _R_BSP_GetFclkFreqHz
+                                  000011c1         4   func ,g         * 
+  _R_BSP_SoftwareDelay
+                                  000011c5       202   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rl78_g16\mcu_clocks.obj
+                                  000013c7  00001439        73
+  _get_fclk_freq_hz
+                                  000013c7        24   func ,g         * 
+  _mcu_clock_setup
+                                  000013eb        4f   func ,g         * 
+FILE=.\src\smc_gen\r_pincfg\Pin.obj
+                                  0000143a  0000143a         1
+  _R_Pins_Create
+                                  0000143a         1   func ,g         * 
+
+SECTION=.SLIB
+FILE=_COM_llmul
+                                  0000143b  00001484        4a
+  __COM_llmul
+                                  0000143b         0   none ,g         * 
+  __REL_llmul_addh
+                                  00001473         0   none ,g         * 
+FILE=_COM_lmul
+                                  00001485  000014cd        49
+  __COM_lmul
+                                  00001485         0   none ,g         * 
+FILE=_COM_uldiv
+                                  000014ce  0000151e        51
+  __COM_uldiv
+                                  000014d3         0   none ,g         * 
+FILE=_COM_ulldiv
+                                  0000151f  00001548        2a
+  __COM_ulldiv
+                                  0000151f         0   none ,g         * 
+FILE=abs
+                                  00001549  0000154f         7
+  _abs
+                                  00001549         0   none ,g         * 
+FILE=sprintf
+                                  00001550  0000160b        bc
+  _sprintf
+                                  00001550        a4   func ,g         * 
+  __REL_sp@1
+                                  000015f4        18   func ,l         * 
+FILE=_COM_mulul
+                                  0000160c  00001668        5d
+  __COM_mulul
+                                  0000160c         0   none ,g         * 
+FILE=_REL_lldiv
+                                  00001669  000016fc        94
+  __REL_lldiv
+                                  00001669         0   none ,g         * 
+FILE=_REL_print
+                                  000016fd  000036b8      1fbc
+  __REL_print
+                                  000016fd      1a28   func ,g         * 
+  __REL_henkan1@1
+                                  00003125        1d   func ,l         * 
+  __REL_pri@1
+                                  00003142       289   func ,l         * 
+  __REL_fltgeti@1
+                                  000033cb       1af   func ,l         * 
+  __REL_inmod@1
+                                  0000357a       13f   func ,l         * 
+FILE=_COM_fdiv
+                                  000036b9  000037eb       133
+  __COM_fdiv
+                                  00003718         0   none ,g         * 
+FILE=_COM_feq
+                                  000037ec  00003801        16
+  __COM_feq
+                                  000037ec         0   none ,g         * 
+FILE=_COM_fge
+                                  00003802  00003817        16
+  __COM_fge
+                                  00003802         0   none ,g         * 
+FILE=_COM_flt
+                                  00003818  0000382d        16
+  __COM_flt
+                                  00003818         0   none ,g         * 
+FILE=_COM_fmul
+                                  0000382e  00003946       119
+  __COM_fmul
+                                  00003879         0   none ,g         * 
+FILE=_COM_fne
+                                  00003947  00003957        11
+  __COM_fne
+                                  00003947         0   none ,g         * 
+FILE=_COM_ftosl
+                                  00003958  0000395f         8
+  __COM_ftosl
+                                  00003958         0   none ,g         * 
+FILE=_COM_funordered
+                                  00003960  0000396a         b
+  __COM_funordered
+                                  00003960         0   none ,g         * 
+FILE=_COM_mului
+                                  0000396b  0000398d        23
+  __COM_mului
+                                  0000396b         0   none ,g         * 
+FILE=_COM_sidiv
+                                  0000398e  000039b1        24
+  __COM_sidiv
+                                  00003990         0   none ,g         * 
+FILE=_COM_sirem
+                                  000039b2  000039d3        22
+  __COM_sirem
+                                  000039b2         0   none ,g         * 
+FILE=_COM_uidiv
+                                  000039d4  000039ee        1b
+  __COM_uidiv
+                                  000039d6         0   none ,g         * 
+FILE=_COM_uirem
+                                  000039ef  00003a06        18
+  __COM_uirem
+                                  000039ef         0   none ,g         * 
+FILE=_COM_ullrem
+                                  00003a07  00003a37        31
+  __COM_ullrem
+                                  00003a07         0   none ,g         * 
+FILE=_COM_ulrem
+                                  00003a38  00003a84        4d
+  __COM_ulrem
+                                  00003a3a         0   none ,g         * 
+FILE=isdigit
+                                  00003a85  00003a8e         a
+  _isdigit
+                                  00003a85         0   none ,g         * 
+FILE=_REL_f_inf
+                                  00003a8f  00003a96         8
+  __REL_f_inf
+                                  00003a8f         0   none ,g         * 
+FILE=_REL_f_norm
+                                  00003a97  00003aa6        10
+  __REL_f_norm
+                                  00003a97         0   none ,g         * 
+FILE=_REL_f_round
+                                  00003aa7  00003ab9        13
+  __REL_f_round
+                                  00003aa7         0   none ,g         * 
+FILE=_REL_fcmp
+                                  00003aba  00003af1        38
+  __REL_fcmp
+                                  00003aba         0   none ,g         * 
+FILE=_REL_fordered_core
+                                  00003af2  00003b0d        1c
+  __REL_fordered_core
+                                  00003af2         0   none ,g         * 
+FILE=_REL_ftol
+                                  00003b0e  00003b42        35
+  __REL_ftol
+                                  00003b0e         0   none ,g         * 
+FILE=_REL_llrem
+                                  00003b43  00003bd0        8e
+  __REL_llrem
+                                  00003b43         0   none ,g         * 
+FILE=_REL_ltosl
+                                  00003bd1  00003bf5        25
+  __REL_ltosl
+                                  00003bd1         0   none ,g         * 
+FILE=_COM_lshr
+                                  00003bf6  00003c16        21
+  __COM_lshr
+                                  00003c00         0   none ,g         * 
+
+SECTION=.rrm
+FILE=rlink_generates_03
+                                  000ff700  000ff703         4
+
+SECTION=.bss
+FILE=.\src\aircooler.obj
+                                  000ff704  000ff770        6d
+  _ar
+                                  000ff704        64   data ,g         * 
+  _mode
+                                  000ff768         1   data ,g         * 
+  _modeStatus
+                                  000ff769         1   data ,g         * 
+  _speed
+                                  000ff76a         1   data ,g         * 
+  _speedStatus
+                                  000ff76b         1   data ,g         * 
+  _state
+                                  000ff76c         5   data ,g         * 
+FILE=.\src\main.obj
+                                  000ff772  000ff7f5        84
+  _count
+                                  000ff772         4   data ,g         * 
+  _data
+                                  000ff776        80   data ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0.obj
+                                  000ff7f6  000ff7ff         a
+  _gp_uart0_tx_address
+                                  000ff7f6         2   data ,g         * 
+  _g_uart0_tx_count
+                                  000ff7f8         2   data ,g         * 
+  _gp_uart0_rx_address
+                                  000ff7fa         2   data ,g         * 
+  _g_uart0_rx_count
+                                  000ff7fc         2   data ,g         * 
+  _g_uart0_rx_length
+                                  000ff7fe         2   data ,g         * 
+FILE=sprintf
+                                  000ff800  000ff803         4
+  __REL_pointer@1
+                                  000ff800         4   data ,l         * 
+FILE=_REL_print
+                                  000ff804  000ff883        80
+  _qt@1@_REL_inmod@1
+                                  000ff804        80   data ,l         * 
+
+SECTION=.dataR
+FILE=.\src\aircooler.obj
+                                  000ff884  000ff884         1
+  _uartSendEnd
+                                  000ff884         1   data ,g         * 
+FILE=.\src\main.obj
+                                  000ff886  000ff889         4
+  _time_us
+                                  000ff886         4   data ,g         * 
+
+Absolute value symbols
+FILE=rlink_generates_06
+  __s.textf
+                                  000009f8         0   none ,g         * 
+  __e.textf
+                                  0000143b         0   none ,g         * 
+  __s.text
+                                  000000d8         0   none ,g         * 
+  __e.text
+                                  00000255         0   none ,g         * 
+  __s.const
+                                  00000800         0   none ,g         * 
+  __e.const
+                                  000009f8         0   none ,g         * 
+  __s.constf
+                                  00000080         0   none ,g         * 
+  __e.constf
+                                  00000094         0   none ,g         * 
+  __s.data
+                                  00000094         0   none ,g         * 
+  __e.data
+                                  0000009a         0   none ,g         * 
+  __s.sdata
+                                  00000080         0   none ,g         * 
+  __e.sdata
+                                  00000080         0   none ,g         * 
+  __s.bss
+                                  000ff704         0   none ,g         * 
+  __e.bss
+                                  000ff884         0   none ,g         * 
+  __s.sbss
+                                  000ffe20         0   none ,g         * 
+  __e.sbss
+                                  000ffe20         0   none ,g         * 
+  __s.dataR
+                                  000ff884         0   none ,g         * 
+  __e.dataR
+                                  000ff88a         0   none ,g         * 
+  __s.sdataR
+                                  000ffe20         0   none ,g         * 
+  __e.sdataR
+                                  000ffe20         0   none ,g         * 
+  __s.init_array
+                                  00000094         0   none ,g         * 
+  __e.init_array
+                                  00000094         0   none ,g         * 
+  __s.RLIB
+                                  000000c4         0   none ,g         * 
+  __e.RLIB
+                                  000000c4         0   none ,g         * 
+  __s.SLIB
+                                  0000143b         0   none ,g         * 
+  __e.SLIB
+                                  00003c17         0   none ,g         * 
+  __s.option_byte
+                                  000000c0         0   none ,g         * 
+  __e.option_byte
+                                  000000c4         0   none ,g         * 
+  __s.monitor1
+                                  000000ce         0   none ,g         * 
+  __e.monitor1
+                                  000000d8         0   none ,g         * 
+  __s.rrm
+                                  000ff700         0   none ,g         * 
+  __e.rrm
+                                  000ff704         0   none ,g         * 
+  __s.security_id
+                                  000000c4         0   none ,g         * 
+  __e.security_id
+                                  000000ce         0   none ,g         * 
+  __s.vect
+                                  00000000         0   none ,g         * 
+  __e.vect
+                                  00000080         0   none ,g         * 
+  __RAM_ADDR_START
+                                  000ff700         0   none ,g         * 
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         * 
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         * 
+  __STACK_ADDR_END
+                                  000ff88a         0   none ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO
