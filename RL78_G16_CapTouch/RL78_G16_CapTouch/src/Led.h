@@ -1,0 +1,11 @@
+void LED_One(void);
+void LED_Two(void);
+void LED_Three(void);
+void LED_Four(void);
+void LED_Five(void);
+void LED_Six(void);
+void LED_Seven(void);
+void LED_Eight(void);
+void LED_Nine(void);
+void LED_Zero(void);
+void LED_Blank(void);

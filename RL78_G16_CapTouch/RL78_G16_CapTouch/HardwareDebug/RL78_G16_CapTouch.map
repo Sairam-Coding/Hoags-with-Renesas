@@ -1,0 +1,1074 @@
+Renesas Optimizing Linker (W3.07.00 )             03-Oct-2024 11:33:19
+
+*** Options ***
+
+-subcommand=LinkerRL78_G16_CapTouch.tmp
+-MAKEUD="C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\HardwareDebug/RL78_G16_CapTouch_l.ud" 
+-device="C:/Users/DELL/.eclipse/com.renesas.platform_711179927/DebugComp/RL78/RL78/Common/DR5F121BC.DVF" 
+-list 
+-show=symbol 
+-nooptimize 
+-entry=_start 
+-auto_section_layout 
+-security_id=00000000000000000000 
+-rrm=FF700 
+-debug_monitor=0-0 
+-user_opt_byte=EFF7F9 
+-ocdbg=85 
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\stkinit.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\cstart.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common_ccrl.obj"
+-input=".\qe_gen\qe_touch_config.obj"
+-input=".\qe_gen\qe_touch_sample.obj"
+-input=".\src\Led.obj"
+-input=".\src\RL78_G16_CapTouch.obj"
+-input=".\src\chimney.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT.obj"
+-input=".\src/smc_gen/Config_PORT\Config_PORT_user.obj"
+-input=".\src/smc_gen/Config_TAU0_0\Config_TAU0_0.obj"
+-input=".\src/smc_gen/Config_TAU0_0\Config_TAU0_0_user.obj"
+-input=".\src/smc_gen/Config_TAU0_1\Config_TAU0_1.obj"
+-input=".\src/smc_gen/Config_TAU0_1\Config_TAU0_1_user.obj"
+-input=".\src/smc_gen/Config_TAU0_2\Config_TAU0_2.obj"
+-input=".\src/smc_gen/Config_TAU0_2\Config_TAU0_2_user.obj"
+-input=".\src/smc_gen/Config_TAU0_3\Config_TAU0_3.obj"
+-input=".\src/smc_gen/Config_TAU0_3\Config_TAU0_3_user.obj"
+-input=".\src/smc_gen/Config_TAU0_4\Config_TAU0_4.obj"
+-input=".\src/smc_gen/Config_TAU0_4\Config_TAU0_4_user.obj"
+-input=".\src/smc_gen/Config_TAU0_5\Config_TAU0_5.obj"
+-input=".\src/smc_gen/Config_TAU0_5\Config_TAU0_5_user.obj"
+-input=".\src/smc_gen/Config_UART0\Config_UART0.obj"
+-input=".\src/smc_gen/Config_UART0\Config_UART0_user.obj"
+-input=".\src/smc_gen/Config_UART1\Config_UART1.obj"
+-input=".\src/smc_gen/Config_UART1\Config_UART1_user.obj"
+-input=".\src/smc_gen/Config_UART2\Config_UART2.obj"
+-input=".\src/smc_gen/Config_UART2\Config_UART2_user.obj"
+-input=".\src/smc_gen/general\r_cg_sau_common.obj"
+-input=".\src/smc_gen/general\r_cg_systeminit.obj"
+-input=".\src/smc_gen/general\r_cg_tau_common.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\hdwinit.obj"
+-input=".\src/smc_gen/r_bsp/board/generic_rl78_g16\r_bsp_init.obj"
+-input=".\src/smc_gen/r_bsp/mcu/all\r_bsp_common.obj"
+-input=".\src/smc_gen/r_bsp/mcu/rl78_g16\mcu_clocks.obj"
+-input=".\src/smc_gen/r_ctsu\r_ctsu.obj"
+-input=".\src/smc_gen/r_pincfg\Pin.obj"
+-input=".\src/smc_gen/r_pincfg\r_ctsu_pinset.obj"
+-input=".\src/smc_gen/rm_touch\rm_touch.obj"
+-library=".\RL78_G16_CapTouch.lib"
+-output="RL78_G16_CapTouch.abs" 
+-debug 
+-nocompress 
+-memory=high 
+-rom=.data=.dataR,.sdata=.sdataR 
+-nomessage 
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.constf
+                                  00000080  00000080         0   2
+.init_array
+                                  00000080  00000080         0   2
+.sdata
+                                  00000080  00000080         0   2
+.data
+                                  00000082  000000a7        26   2
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.RLIB
+                                  000000c4  000000c4         0   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.SLIB
+                                  000000d8  000004a3       3cc   1
+.const
+                                  00000800  000009ed       1ee   2
+.text
+                                  000009ee  000011ef       802   1
+.textf
+                                  000011f0  0000623d      504e   1
+.rrm
+                                  000ff700  000ff703         4   1
+.bss
+                                  000ff704  000ffa17       314   2
+.dataR
+                                  000ffa18  000ffa3d        26   2
+.sbss
+                                  000ffe20  000ffe2f        10   2
+.sdataR
+                                  000ffe30  000ffe30         0   2
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_05
+                                  00000000  0000007f        80
+
+SECTION=.data
+FILE=.\qe_gen\qe_touch_sample.obj
+                                  00000082  00000082         1
+FILE=.\src\RL78_G16_CapTouch.obj
+                                  00000084  00000084         1
+FILE=.\src\chimney.obj
+                                  00000086  0000008a         5
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.obj
+                                  0000008c  0000008c         1
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.obj
+                                  0000008e  0000008f         2
+FILE=.\src\smc_gen\Config_TAU0_2\Config_TAU0_2_user.obj
+                                  00000090  00000093         4
+FILE=.\src\smc_gen\Config_TAU0_3\Config_TAU0_3_user.obj
+                                  00000094  00000097         4
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4_user.obj
+                                  00000098  0000009b         4
+FILE=.\src\smc_gen\Config_TAU0_5\Config_TAU0_5_user.obj
+                                  0000009c  0000009d         2
+FILE=.\src\smc_gen\Config_UART1\Config_UART1_user.obj
+                                  0000009e  0000009f         2
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  000000a0  000000a3         4
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+                                  000000a4  000000a7         4
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_04
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000ce  000000d7         a
+
+SECTION=.SLIB
+FILE=_COM_imul
+                                  000000d8  000000e6         f
+  __COM_imul
+                                  000000d8         0   none ,g         * 
+FILE=_COM_llmul
+                                  000000e7  00000130        4a
+  __COM_llmul
+                                  000000e7         0   none ,g         * 
+  __REL_llmul_addh
+                                  0000011f         0   none ,g         * 
+FILE=_COM_llshl
+                                  00000131  0000014f        1f
+  __COM_llshl
+                                  00000131         0   none ,g         * 
+FILE=_COM_llshr
+                                  00000150  00000179        2a
+  __COM_llshr
+                                  00000150         0   none ,g         * 
+FILE=_COM_lmul
+                                  0000017a  000001c2        49
+  __COM_lmul
+                                  0000017a         0   none ,g         * 
+FILE=_COM_lshl
+                                  000001c3  000001dd        1b
+  __COM_lshl
+                                  000001cc         0   none ,g         * 
+FILE=_COM_lshr
+                                  000001de  000001fe        21
+  __COM_lshr
+                                  000001e8         0   none ,g         * 
+FILE=_COM_sidiv
+                                  000001ff  00000222        24
+  __COM_sidiv
+                                  00000201         0   none ,g         * 
+FILE=_COM_sirem
+                                  00000223  00000244        22
+  __COM_sirem
+                                  00000223         0   none ,g         * 
+FILE=_COM_sldiv
+                                  00000245  00000296        52
+  __COM_sldiv
+                                  0000024a         0   none ,g         * 
+FILE=_COM_uidiv
+                                  00000297  000002b1        1b
+  __COM_uidiv
+                                  00000299         0   none ,g         * 
+FILE=_COM_uldiv
+                                  000002b2  00000302        51
+  __COM_uldiv
+                                  000002b7         0   none ,g         * 
+FILE=_COM_ulldiv
+                                  00000303  0000032c        2a
+  __COM_ulldiv
+                                  00000303         0   none ,g         * 
+FILE=memmove
+                                  0000032d  00000350        24
+  _memmove
+                                  0000032d         0   none ,g         * 
+FILE=memset
+                                  00000351  0000035e         e
+  _memset
+                                  00000351         0   none ,g         * 
+FILE=_COM_mulul
+                                  0000035f  000003bb        5d
+  __COM_mulul
+                                  0000035f         0   none ,g         * 
+FILE=_COM_uirem
+                                  000003bc  000003d3        18
+  __COM_uirem
+                                  000003bc         0   none ,g         * 
+FILE=_REL_lldiv
+                                  000003d4  00000467        94
+  __REL_lldiv
+                                  000003d4         0   none ,g         * 
+FILE=_REL_llsh_core
+                                  00000468  00000480        19
+  __REL_llsh_core
+                                  00000468         0   none ,g         * 
+FILE=_COM_mului
+                                  00000481  000004a3        23
+  __COM_mului
+                                  00000481         0   none ,g         * 
+
+SECTION=.const
+FILE=.\qe_gen\qe_touch_config.obj
+                                  00000800  00000895        96
+  _g_qe_ctsu_element_cfg_config01
+                                  00000800        24   data ,g         * 
+  _g_qe_ctsu_cfg_config01
+                                  00000824        28   data ,g         * 
+  _g_qe_ctsu_instance_config01
+                                  0000084c         6   data ,g         * 
+  _g_qe_touch_button_cfg_config01
+                                  00000852        24   data ,g         * 
+  _g_qe_touch_cfg_config01
+                                  00000876        1a   data ,g         * 
+  _g_qe_touch_instance_config01
+                                  00000890         6   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4_user.obj
+                                  00000896  000008a9        14
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  000008aa  000008c1        18
+  _g_bsp_delay_time
+                                  000008aa        18   data ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rl78_g16\mcu_clocks.obj
+                                  000008c2  000008e1        20
+  _g_fih_hz
+                                  000008c2        20   data ,g         * 
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  000008e2  0000090d        2c
+  _g_ctsu_on_ctsu
+                                  000008e2        2c   data ,g         * 
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+                                  0000090e  000009ed        e0
+  _g_touch_on_ctsu
+                                  0000090e        2c   data ,g         * 
+
+SECTION=.text
+FILE=.\src\smc_gen\r_bsp\mcu\all\cstart.obj
+                                  000009ee  00000a64        77
+  _start
+                                  000009ee         0   entry,g         * 
+  _exit
+                                  00000a62         0   none ,g         * 
+  _atexit
+                                  00000a64         0   none ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common_ccrl.obj
+                                  00000a65  00000a70         c
+  _delay_wait
+                                  00000a65         0   none ,g         * 
+  loop
+                                  00000a65         0   none ,l         * 
+  check
+                                  00000a6c         0   none ,l         * 
+  _exit
+                                  00000a70         0   none ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.obj
+                                  00000a71  00000a9c        2c
+  _r_Config_TAU0_0_interrupt@1
+                                  00000a71        2c   func ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.obj
+                                  00000a9d  00000b6a        ce
+  _r_Config_TAU0_1_interrupt@1
+                                  00000a9d        ce   func ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_2\Config_TAU0_2_user.obj
+                                  00000b6b  00000c7d       113
+  _r_Config_TAU0_2_interrupt@1
+                                  00000b6b       113   func ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_3\Config_TAU0_3_user.obj
+                                  00000c7e  00000d92       115
+  _r_Config_TAU0_3_interrupt@1
+                                  00000c7e       115   func ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4_user.obj
+                                  00000d93  00000e41        af
+  _r_Config_TAU0_4_interrupt@1
+                                  00000d93        af   func ,l         * 
+FILE=.\src\smc_gen\Config_TAU0_5\Config_TAU0_5_user.obj
+                                  00000e42  00000e46         5
+  _r_Config_TAU0_5_interrupt@1
+                                  00000e42         5   func ,l         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0_user.obj
+                                  00000e47  00000f11        cb
+  _r_Config_UART0_interrupt_send@1
+                                  00000e47        39   func ,l         * 
+  _r_Config_UART0_interrupt_receive@1
+                                  00000e80        5f   func ,l         * 
+  _r_Config_UART0_interrupt_error@1
+                                  00000edf        33   func ,l         * 
+FILE=.\src\smc_gen\Config_UART1\Config_UART1_user.obj
+                                  00000f12  00000fdc        cb
+  _r_Config_UART1_interrupt_send@1
+                                  00000f12        39   func ,l         * 
+  _r_Config_UART1_interrupt_receive@1
+                                  00000f4b        5f   func ,l         * 
+  _r_Config_UART1_interrupt_error@1
+                                  00000faa        33   func ,l         * 
+FILE=.\src\smc_gen\Config_UART2\Config_UART2_user.obj
+                                  00000fdd  00001015        39
+  _r_Config_UART2_interrupt_send@1
+                                  00000fdd        39   func ,l         * 
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  00001016  000011ef       1da
+  _ctsu_write_isr
+                                  00001016        af   func ,g         * 
+  _ctsu_read_isr
+                                  000010c5        a7   func ,g         * 
+  _ctsu_end_isr
+                                  0000116c        84   func ,g         * 
+
+SECTION=.textf
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\stkinit.obj
+                                  000011f0  00001233        44
+  _stkinit
+                                  000011f0         0   none ,g         * 
+  LSTINIT1
+                                  000011fe         0   none ,l         * 
+  LSTINIT2
+                                  00001228         0   none ,l         * 
+  LSTINIT3
+                                  00001233         0   none ,l         * 
+FILE=.\qe_gen\qe_touch_config.obj
+                                  00001234  00001242         f
+  _qe_touch_callback
+                                  00001234         f   func ,g         * 
+FILE=.\qe_gen\qe_touch_sample.obj
+                                  00001243  0000138a       148
+  _qe_touch_main
+                                  00001243        4f   func ,g         * 
+  _touchunit
+                                  00001292        84   func ,g         * 
+  _qe_touch_delay
+                                  00001316        75   func ,g         * 
+FILE=.\src\Led.obj
+                                  0000138b  0000147c        f2
+  _LED_One
+                                  0000138b        16   func ,g         * 
+  _LED_Two
+                                  000013a1        16   func ,g         * 
+  _LED_Three
+                                  000013b7        16   func ,g         * 
+  _LED_Four
+                                  000013cd        16   func ,g         * 
+  _LED_Five
+                                  000013e3        16   func ,g         * 
+  _LED_Six
+                                  000013f9        16   func ,g         * 
+  _LED_Seven
+                                  0000140f        16   func ,g         * 
+  _LED_Eight
+                                  00001425        16   func ,g         * 
+  _LED_Nine
+                                  0000143b        16   func ,g         * 
+  _LED_Zero
+                                  00001451        16   func ,g         * 
+  _LED_Blank
+                                  00001467        16   func ,g         * 
+FILE=.\src\RL78_G16_CapTouch.obj
+                                  0000147d  00001588       10c
+  _main
+                                  0000147d        5e   func ,g         * 
+  _uart_integer
+                                  000014db        6d   func ,g         * 
+  _Task1
+                                  00001548         1   func ,g         * 
+  _Task2
+                                  00001549        40   func ,g         * 
+FILE=.\src\chimney.obj
+                                  00001589  00001870       2e8
+  _Button_Action
+                                  00001589       140   func ,g         * 
+  _Receive_Action
+                                  000016c9       127   func ,g         * 
+  _Low_Speed
+                                  000017f0        14   func ,g         * 
+  _Medium_Speed
+                                  00001804        14   func ,g         * 
+  _High_Speed
+                                  00001818        14   func ,g         * 
+  _Idle_Mode
+                                  0000182c         d   func ,g         * 
+  _Left_Right
+                                  00001839        16   func ,g         * 
+  _Right_Left
+                                  0000184f        22   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT.obj
+                                  00001871  000018b5        45
+  _R_Config_PORT_Create
+                                  00001871        45   func ,g         * 
+FILE=.\src\smc_gen\Config_PORT\Config_PORT_user.obj
+                                  000018b6  000018b6         1
+  _R_Config_PORT_Create_UserInit
+                                  000018b6         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0.obj
+                                  000018b7  00001919        63
+  _R_Config_TAU0_0_Create
+                                  000018b7        43   func ,g         * 
+  _R_Config_TAU0_0_Start
+                                  000018fa        10   func ,g         * 
+  _R_Config_TAU0_0_Stop
+                                  0000190a        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.obj
+                                  0000191a  0000191a         1
+  _R_Config_TAU0_0_Create_UserInit
+                                  0000191a         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1.obj
+                                  0000191b  0000198f        75
+  _R_Config_TAU0_1_Create
+                                  0000191b        55   func ,g         * 
+  _R_Config_TAU0_1_Start
+                                  00001970        10   func ,g         * 
+  _R_Config_TAU0_1_Stop
+                                  00001980        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.obj
+                                  00001990  00001990         1
+  _R_Config_TAU0_1_Create_UserInit
+                                  00001990         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_2\Config_TAU0_2.obj
+                                  00001991  00001a2f        9f
+  _R_Config_TAU0_2_Create
+                                  00001991        6f   func ,g         * 
+  _R_Config_TAU0_2_Start
+                                  00001a00        10   func ,g         * 
+  _R_Config_TAU0_2_Stop
+                                  00001a10        10   func ,g         * 
+  _R_Config_TAU0_2_Get_PulseWidth
+                                  00001a20        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_2\Config_TAU0_2_user.obj
+                                  00001a30  00001a30         1
+  _R_Config_TAU0_2_Create_UserInit
+                                  00001a30         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_3\Config_TAU0_3.obj
+                                  00001a31  00001ac0        90
+  _R_Config_TAU0_3_Create
+                                  00001a31        60   func ,g         * 
+  _R_Config_TAU0_3_Start
+                                  00001a91        10   func ,g         * 
+  _R_Config_TAU0_3_Stop
+                                  00001aa1        10   func ,g         * 
+  _R_Config_TAU0_3_Get_PulseWidth
+                                  00001ab1        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_3\Config_TAU0_3_user.obj
+                                  00001ac1  00001ac1         1
+  _R_Config_TAU0_3_Create_UserInit
+                                  00001ac1         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4.obj
+                                  00001ac2  00001b36        75
+  _R_Config_TAU0_4_Create
+                                  00001ac2        55   func ,g         * 
+  _R_Config_TAU0_4_Start
+                                  00001b17        10   func ,g         * 
+  _R_Config_TAU0_4_Stop
+                                  00001b27        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4_user.obj
+                                  00001b37  00001b37         1
+  _R_Config_TAU0_4_Create_UserInit
+                                  00001b37         1   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_5\Config_TAU0_5.obj
+                                  00001b38  00001bac        75
+  _R_Config_TAU0_5_Create
+                                  00001b38        55   func ,g         * 
+  _R_Config_TAU0_5_Start
+                                  00001b8d        10   func ,g         * 
+  _R_Config_TAU0_5_Stop
+                                  00001b9d        10   func ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_5\Config_TAU0_5_user.obj
+                                  00001bad  00001bad         1
+  _R_Config_TAU0_5_Create_UserInit
+                                  00001bad         1   func ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0.obj
+                                  00001bae  00001d0b       15e
+  _R_Config_UART0_Create
+                                  00001bae        a5   func ,g         * 
+  _R_Config_UART0_Start
+                                  00001c53        2e   func ,g         * 
+  _R_Config_UART0_Stop
+                                  00001c81        25   func ,g         * 
+  _R_Config_UART0_Send
+                                  00001ca6        3a   func ,g         * 
+  _R_Config_UART0_Receive
+                                  00001ce0        2c   func ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0_user.obj
+                                  00001d0c  00001d22        17
+  _R_Config_UART0_Create_UserInit
+                                  00001d0c         1   func ,g         * 
+  _r_Config_UART0_callback_sendend@1
+                                  00001d0d         6   func ,l         * 
+  _r_Config_UART0_callback_receiveend@1
+                                  00001d13         6   func ,l         * 
+  _r_Config_UART0_callback_error@1
+                                  00001d19         5   func ,l         * 
+  _r_Config_UART0_callback_softwareoverrun@1
+                                  00001d1e         5   func ,l         * 
+FILE=.\src\smc_gen\Config_UART1\Config_UART1.obj
+                                  00001d23  00001e91       16f
+  _R_Config_UART1_Create
+                                  00001d23        b6   func ,g         * 
+  _R_Config_UART1_Start
+                                  00001dd9        2e   func ,g         * 
+  _R_Config_UART1_Stop
+                                  00001e07        25   func ,g         * 
+  _R_Config_UART1_Send
+                                  00001e2c        3a   func ,g         * 
+  _R_Config_UART1_Receive
+                                  00001e66        2c   func ,g         * 
+FILE=.\src\smc_gen\Config_UART1\Config_UART1_user.obj
+                                  00001e92  00001ea4        13
+  _R_Config_UART1_Create_UserInit
+                                  00001e92         1   func ,g         * 
+  _r_Config_UART1_callback_sendend@1
+                                  00001e93         4   func ,l         * 
+  _r_Config_UART1_callback_receiveend@1
+                                  00001e97         4   func ,l         * 
+  _r_Config_UART1_callback_error@1
+                                  00001e9b         5   func ,l         * 
+  _r_Config_UART1_callback_softwareoverrun@1
+                                  00001ea0         5   func ,l         * 
+FILE=.\src\smc_gen\Config_UART2\Config_UART2.obj
+                                  00001ea5  00001f74        d0
+  _R_Config_UART2_Create
+                                  00001ea5        5b   func ,g         * 
+  _R_Config_UART2_Start
+                                  00001f00        22   func ,g         * 
+  _R_Config_UART2_Stop
+                                  00001f22        19   func ,g         * 
+  _R_Config_UART2_Send
+                                  00001f3b        3a   func ,g         * 
+FILE=.\src\smc_gen\Config_UART2\Config_UART2_user.obj
+                                  00001f75  00001f76         2
+  _R_Config_UART2_Create_UserInit
+                                  00001f75         1   func ,g         * 
+  _r_Config_UART2_callback_sendend@1
+                                  00001f76         1   func ,l         * 
+FILE=.\src\smc_gen\general\r_cg_sau_common.obj
+                                  00001f77  00001fa0        2a
+  _R_SAU0_Create
+                                  00001f77         d   func ,g         * 
+  _R_SAU1_Create
+                                  00001f84         9   func ,g         * 
+  _R_SAU0_Set_PowerOn
+                                  00001f8d         5   func ,g         * 
+  _R_SAU0_Set_PowerOff
+                                  00001f92         5   func ,g         * 
+  _R_SAU1_Set_PowerOn
+                                  00001f97         5   func ,g         * 
+  _R_SAU1_Set_PowerOff
+                                  00001f9c         5   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_systeminit.obj
+                                  00001fa1  00001fb1        11
+  _R_Systeminit
+                                  00001fa1        11   func ,g         * 
+FILE=.\src\smc_gen\general\r_cg_tau_common.obj
+                                  00001fb2  00001fd8        27
+  _R_TAU0_Create
+                                  00001fb2        1d   func ,g         * 
+  _R_TAU0_Set_PowerOn
+                                  00001fcf         5   func ,g         * 
+  _R_TAU0_Set_PowerOff
+                                  00001fd4         5   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\hdwinit.obj
+                                  00001fd9  00001fee        16
+  _hdwinit
+                                  00001fd9         d   func ,g         * 
+  _output_ports_configure@1
+                                  00001fe6         2   func ,l         * 
+  _interrupts_configure@1
+                                  00001fe8         2   func ,l         * 
+  _peripheral_modules_enable@1
+                                  00001fea         5   func ,l         * 
+FILE=.\src\smc_gen\r_bsp\board\generic_rl78_g16\r_bsp_init.obj
+                                  00001fef  00002010        22
+  _bsp_init_system
+                                  00001fef        1d   func ,g         * 
+  _bsp_init_hardware
+                                  0000200c         5   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\all\r_bsp_common.obj
+                                  00002011  00002258       248
+  _R_BSP_GetFclkFreqHz
+                                  00002011        11   func ,g         * 
+  _R_BSP_SoftwareDelay
+                                  00002022       237   func ,g         * 
+FILE=.\src\smc_gen\r_bsp\mcu\rl78_g16\mcu_clocks.obj
+                                  00002259  000022d0        78
+  _get_fclk_freq_hz
+                                  00002259        47   func ,g         * 
+  _mcu_clock_setup
+                                  000022a0        31   func ,g         * 
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  000022d1  00003725      1455
+  _R_CTSU_Open
+                                  000022d1       477   func ,g         * 
+  _R_CTSU_ScanStart
+                                  00002748        f9   func ,g         * 
+  _R_CTSU_DataGet
+                                  00002841       15b   func ,g         * 
+  _R_CTSU_OffsetTuning
+                                  0000299c       10c   func ,g         * 
+  _R_CTSU_ScanStop
+                                  00002aa8        77   func ,g         * 
+  _R_CTSU_CallbackSet
+                                  00002b1f        79   func ,g         * 
+  _R_CTSU_SmsSet
+                                  00002b98        47   func ,g         * 
+  _R_CTSU_Close
+                                  00002bdf        7a   func ,g         * 
+  _R_CTSU_SpecificDataGet
+                                  00002c59       131   func ,g         * 
+  _R_CTSU_DataInsert
+                                  00002d8a        b7   func ,g         * 
+  _ctsu_initial_offset_tuning@1
+                                  00002e41       2d4   func ,l         * 
+  _ctsu_moving_average@1
+                                  00003115        6b   func ,l         * 
+  _ctsu_end_interrupt@1
+                                  00003180        e3   func ,l         * 
+  _ctsu_correction_process@1
+                                  00003263       1a7   func ,l         * 
+  _ctsu_correction_measurement@1
+                                  0000340a        57   func ,l         * 
+  _ctsu_correction_calc@1
+                                  00003461       10d   func ,l         * 
+  _ctsu_correction_exec@1
+                                  0000356e        fc   func ,l         * 
+  _ctsu_delay@1
+                                  0000366a        75   func ,l         * 
+  _R_CTSU_Diagnosis
+                                  000036df        47   func ,g         * 
+FILE=.\src\smc_gen\r_pincfg\Pin.obj
+                                  00003726  00003786        61
+  _R_Pins_Create
+                                  00003726        61   func ,g         * 
+FILE=.\src\smc_gen\r_pincfg\r_ctsu_pinset.obj
+                                  00003787  000037e0        5a
+  _R_CTSU_PinSetInit
+                                  00003787        5a   func ,g         * 
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+                                  000037e1  0000623d      2a5d
+  _RM_TOUCH_Open
+                                  000037e1       37c   func ,g         * 
+  _RM_TOUCH_ScanStart
+                                  00003b5d        84   func ,g         * 
+  _RM_TOUCH_DataGet
+                                  00003be1       58a   func ,g         * 
+  _RM_TOUCH_PadDataGet
+                                  0000416b        6e   func ,g         * 
+  _RM_TOUCH_ScanStop
+                                  000041d9        66   func ,g         * 
+  _RM_TOUCH_CallbackSet
+                                  0000423f        a4   func ,g         * 
+  _RM_TOUCH_SmsSet
+                                  000042e3        de   func ,g         * 
+  _RM_TOUCH_Close
+                                  000043c1       10d   func ,g         * 
+  _RM_TOUCH_SensitivityRatioGet
+                                  000044ce       23d   func ,g         * 
+  _RM_TOUCH_ThresholdAdjust
+                                  0000470b       1bd   func ,g         * 
+  _RM_TOUCH_DriftControl
+                                  000048c8        4b   func ,g         * 
+  _touch_button_self_decode@1
+                                  00004913        84   func ,l         * 
+  _touch_button_on@1
+                                  00004997       169   func ,l         * 
+  _touch_button_off@1
+                                  00004b00        ac   func ,l         * 
+  _touch_button_drift@1
+                                  00004bac       14e   func ,l         * 
+  _touch_uart_callback
+                                  00004cfa       abd   func ,g         * 
+  _touch_serial_tuning
+                                  000057b7       1a9   func ,g         * 
+  _touch_tuning_qe_get_value
+                                  00005960        b5   func ,g         * 
+  _touch_tuning_initialize
+                                  00005a15        56   func ,g         * 
+  _touch_tuning_qe_get_cfg
+                                  00005a6b       190   func ,g         * 
+  _touch_tuning_scan_mode_select
+                                  00005bfb        7b   func ,g         * 
+  _touch_tuning_scan_register_setting
+                                  00005c76        31   func ,g         * 
+  _touch_tuning_ts_setup
+                                  00005ca7       1b6   func ,g         * 
+  _touch_tuning_count_element
+                                  00005e5d        3b   func ,g         * 
+  _touch_tuning_uart_connect
+                                  00005e98        1d   func ,g         * 
+  _touch_tuning_open
+                                  00005eb5        e0   func ,g         * 
+  _touch_tuning_dataget
+                                  00005f95        f7   func ,g         * 
+  _touch_tuning_scanstart
+                                  0000608c        5c   func ,g         * 
+  _touch_tuning_get32
+                                  000060e8        39   func ,g         * 
+  _touch_tuning_get16
+                                  00006121        1a   func ,g         * 
+  _touch_tuning_get8
+                                  0000613b        11   func ,g         * 
+  _touch_tuning_send32
+                                  0000614c        2e   func ,g         * 
+  _touch_tuning_send16
+                                  0000617a        2b   func ,g         * 
+  _touch_tuning_send8
+                                  000061a5        2b   func ,g         * 
+  _touch_tuning_pclkb_get
+                                  000061d0        6e   func ,g         * 
+
+SECTION=.rrm
+FILE=rlink_generates_03
+                                  000ff700  000ff703         4
+
+SECTION=.bss
+FILE=.\qe_gen\qe_touch_config.obj
+                                  000ff704  000ff7a1        9e
+  _g_qe_touch_flag
+                                  000ff704         1   data ,g         * 
+  _g_qe_ctsu_event
+                                  000ff705         1   data ,g         * 
+  _g_qe_ctsu_ctrl_config01
+                                  000ff706        58   data ,g         * 
+  _g_qe_touch_ctrl_config01
+                                  000ff75e        44   data ,g         * 
+FILE=.\qe_gen\qe_touch_sample.obj
+                                  000ff7a2  000ff7a9         8
+  _button_status
+                                  000ff7a2         8   data ,g         * 
+FILE=.\src\RL78_G16_CapTouch.obj
+                                  000ff7aa  000ff7b3         a
+  _g_times
+                                  000ff7aa         1   data ,g         * 
+  _g_times1
+                                  000ff7ab         1   data ,g         * 
+  _global_data
+                                  000ff7ac         4   data ,g         * 
+  _pulse_width
+                                  000ff7b0         4   data ,g         * 
+FILE=.\src\chimney.obj
+                                  000ff7b4  000ff7bb         8
+  _Renesaspack
+                                  000ff7b4         4   data ,g         * 
+  _rcvpack
+                                  000ff7b8         4   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.obj
+                                  000ff7bc  000ff7bd         2
+  _status
+                                  000ff7bc         2   data ,g         * 
+FILE=.\src\smc_gen\Config_UART0\Config_UART0.obj
+                                  000ff7be  000ff7c7         a
+  _gp_uart0_tx_address
+                                  000ff7be         2   data ,g         * 
+  _g_uart0_tx_count
+                                  000ff7c0         2   data ,g         * 
+  _gp_uart0_rx_address
+                                  000ff7c2         2   data ,g         * 
+  _g_uart0_rx_count
+                                  000ff7c4         2   data ,g         * 
+  _g_uart0_rx_length
+                                  000ff7c6         2   data ,g         * 
+FILE=.\src\smc_gen\Config_UART1\Config_UART1.obj
+                                  000ff7c8  000ff7d1         a
+  _gp_uart1_tx_address
+                                  000ff7c8         2   data ,g         * 
+  _g_uart1_tx_count
+                                  000ff7ca         2   data ,g         * 
+  _gp_uart1_rx_address
+                                  000ff7cc         2   data ,g         * 
+  _g_uart1_rx_count
+                                  000ff7ce         2   data ,g         * 
+  _g_uart1_rx_length
+                                  000ff7d0         2   data ,g         * 
+FILE=.\src\smc_gen\Config_UART2\Config_UART2.obj
+                                  000ff7d2  000ff7d5         4
+  _gp_uart2_tx_address
+                                  000ff7d2         2   data ,g         * 
+  _g_uart2_tx_count
+                                  000ff7d4         2   data ,g         * 
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  000ff7d6  000ff871        9c
+  _g_ctsu_element_complete_flag@2
+                                  000ff7d6         6   data ,l         * 
+  _g_ctsu_tuning_diff@3
+                                  000ff7dc        18   data ,l         * 
+  _g_ctsu_ctsuwr@4
+                                  000ff7f4        24   data ,l         * 
+  _g_ctsu_self_raw@6
+                                  000ff818        18   data ,l         * 
+  _g_ctsu_self_corr@7
+                                  000ff830         c   data ,l         * 
+  _g_ctsu_self_data@8
+                                  000ff83c        18   data ,l         * 
+  _g_ctsu_correction_info@9
+                                  000ff854        1c   data ,l         * 
+  _gp_ctsu_isr_context
+                                  000ff870         2   data ,g         * 
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+                                  000ff872  000ffa17       1a6
+  _g_touch_button_threshold@2
+                                  000ff872         c   data ,l         * 
+  _g_touch_button_hysteresis@3
+                                  000ff87e         c   data ,l         * 
+  _g_touch_button_reference@4
+                                  000ff88a         c   data ,l         * 
+  _g_touch_button_on_count@5
+                                  000ff896         c   data ,l         * 
+  _g_touch_button_off_count@6
+                                  000ff8a2         c   data ,l         * 
+  _g_touch_button_drift_buf@7
+                                  000ff8ae        18   data ,l         * 
+  _g_touch_button_drift_count@8
+                                  000ff8c6         c   data ,l         * 
+  _g_touch_monitor_buf@9
+                                  000ff8d2        6e   data ,l         * 
+  _g_touch_monitor_id@10
+                                  000ff940         1   data ,l         * 
+  _g_touch_monitor_size@11
+                                  000ff942        10   data ,l         * 
+  _gp_touch_ctrl_list@12
+                                  000ff952        40   data ,l         * 
+  _g_touch_uart_open_bitmap@13
+                                  000ff992         4   data ,l         * 
+  _g_touch_uart_monitor_num@14
+                                  000ff996         1   data ,l         * 
+  _g_touch_tuning_pclkb_frequency@15
+                                  000ff998         4   data ,l         * 
+  _g_touch_tuning_mcu_group@16
+                                  000ff99c         1   data ,l         * 
+  _g_touch_tuning_state@17
+                                  000ff99d         1   data ,l         * 
+  _g_touch_tuning_mode@18
+                                  000ff99e         1   data ,l         * 
+  _g_touch_tuning_scan_mode@19
+                                  000ff99f         1   data ,l         * 
+  _g_touch_tuning_ts_chac_mask@20
+                                  000ff9a0         8   data ,l         * 
+  _g_touch_tuning_ts_chtrc_mask@21
+                                  000ff9a8         8   data ,l         * 
+  _g_touch_tuning_err_event@22
+                                  000ff9b0         1   data ,l         * 
+  _g_touch_tuning_qe_atune@23
+                                  000ff9b1         1   data ,l         * 
+  _g_touch_tuning_qe_posel@24
+                                  000ff9b2         1   data ,l         * 
+  _g_touch_tuning_qe_txvsel@25
+                                  000ff9b3         1   data ,l         * 
+  _g_touch_tuning_phase_run@26
+                                  000ff9b4         1   data ,l         * 
+  _g_touch_tuning_self_target_value@27
+                                  000ff9b6         2   data ,l         * 
+  _g_touch_tuning_mutual_target_value@28
+                                  000ff9b8         2   data ,l         * 
+  _g_touch_tuning_mode_save@29
+                                  000ff9ba         1   data ,l         * 
+  _g_touch_tuning_ico_data@30
+                                  000ff9bc         c   data ,l         * 
+  _g_touch_tuning_ctsu_write@31
+                                  000ff9c8        24   data ,l         * 
+  _g_touch_tuning_md@32
+                                  000ff9ec         1   data ,l         * 
+  _g_touch_tuning_tx_buf@33
+                                  000ff9ed         c   data ,l         * 
+  _g_touch_uart_transmit_flag
+                                  000ff9f9         1   data ,g         * 
+  _g_touch_uart_rx_buf@34
+                                  000ff9fa         f   data ,l         * 
+  _gp_touch_isr_context
+                                  000ffa0a         2   data ,g         * 
+  _data@36@RM_TOUCH_DataGet
+                                  000ffa0c         c   data ,l         * 
+
+SECTION=.dataR
+FILE=.\qe_gen\qe_touch_sample.obj
+                                  000ffa18  000ffa18         1
+  _Button_status
+                                  000ffa18         1   data ,g         * 
+FILE=.\src\RL78_G16_CapTouch.obj
+                                  000ffa1a  000ffa1a         1
+  _var
+                                  000ffa1a         1   data ,g         * 
+FILE=.\src\chimney.obj
+                                  000ffa1c  000ffa20         5
+  _count
+                                  000ffa1c         1   data ,g         * 
+  _arr
+                                  000ffa1d         4   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.obj
+                                  000ffa22  000ffa22         1
+  _timer_counter
+                                  000ffa22         1   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_1\Config_TAU0_1_user.obj
+                                  000ffa24  000ffa25         2
+  _timer_counter1
+                                  000ffa24         1   data ,g         * 
+  _index
+                                  000ffa25         1   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_2\Config_TAU0_2_user.obj
+                                  000ffa26  000ffa29         4
+  _g_tau0_ch2_width
+                                  000ffa26         4   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_3\Config_TAU0_3_user.obj
+                                  000ffa2a  000ffa2d         4
+  _g_tau0_ch3_width
+                                  000ffa2a         4   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_4\Config_TAU0_4_user.obj
+                                  000ffa2e  000ffa31         4
+  _timer_counter4
+                                  000ffa2e         1   data ,g         * 
+  _seconds
+                                  000ffa2f         1   data ,g         * 
+  _timer_flag
+                                  000ffa30         1   data ,g         * 
+  _autoclean_time
+                                  000ffa31         1   data ,g         * 
+FILE=.\src\smc_gen\Config_TAU0_5\Config_TAU0_5_user.obj
+                                  000ffa32  000ffa33         2
+  _timer_counter5
+                                  000ffa32         2   data ,g         * 
+FILE=.\src\smc_gen\Config_UART1\Config_UART1_user.obj
+                                  000ffa34  000ffa35         2
+  _sendflag
+                                  000ffa34         1   data ,g         * 
+  _rcvflag
+                                  000ffa35         1   data ,g         * 
+FILE=.\src\smc_gen\r_ctsu\r_ctsu.obj
+                                  000ffa36  000ffa39         4
+  _g_ctsu_element_index@1
+                                  000ffa36         2   data ,l         * 
+  _g_ctsu_self_element_index@5
+                                  000ffa38         2   data ,l         * 
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+                                  000ffa3a  000ffa3d         4
+  _g_touch_button_index@1
+                                  000ffa3a         1   data ,l         * 
+  _g_touch_uart_rx_num@35
+                                  000ffa3c         2   data ,l         * 
+
+SECTION=.sbss
+FILE=.\src\RL78_G16_CapTouch.obj
+                                  000ffe20  000ffe2f        10
+  _g_pulse_width
+                                  000ffe20         8   data ,g         * 
+  _g_pulse_width1
+                                  000ffe28         8   data ,g         * 
+
+Absolute value symbols
+FILE=.\src\smc_gen\rm_touch\rm_touch.obj
+  @$IMM_18
+                                  00000018         0   none ,l         * 
+  @$IMM_30
+                                  00000030         0   none ,l         * 
+FILE=rlink_generates_06
+  __s.textf
+                                  000011f0         0   none ,g         * 
+  __e.textf
+                                  0000623e         0   none ,g         * 
+  __s.text
+                                  000009ee         0   none ,g         * 
+  __e.text
+                                  000011f0         0   none ,g         * 
+  __s.const
+                                  00000800         0   none ,g         * 
+  __e.const
+                                  000009ee         0   none ,g         * 
+  __s.constf
+                                  00000080         0   none ,g         * 
+  __e.constf
+                                  00000080         0   none ,g         * 
+  __s.data
+                                  00000082         0   none ,g         * 
+  __e.data
+                                  000000a8         0   none ,g         * 
+  __s.sdata
+                                  00000080         0   none ,g         * 
+  __e.sdata
+                                  00000080         0   none ,g         * 
+  __s.bss
+                                  000ff704         0   none ,g         * 
+  __e.bss
+                                  000ffa18         0   none ,g         * 
+  __s.sbss
+                                  000ffe20         0   none ,g         * 
+  __e.sbss
+                                  000ffe30         0   none ,g         * 
+  __s.dataR
+                                  000ffa18         0   none ,g         * 
+  __e.dataR
+                                  000ffa3e         0   none ,g         * 
+  __s.sdataR
+                                  000ffe30         0   none ,g         * 
+  __e.sdataR
+                                  000ffe30         0   none ,g         * 
+  __s.init_array
+                                  00000080         0   none ,g         * 
+  __e.init_array
+                                  00000080         0   none ,g         * 
+  __s.RLIB
+                                  000000c4         0   none ,g         * 
+  __e.RLIB
+                                  000000c4         0   none ,g         * 
+  __s.SLIB
+                                  000000d8         0   none ,g         * 
+  __e.SLIB
+                                  000004a4         0   none ,g         * 
+  __s.option_byte
+                                  000000c0         0   none ,g         * 
+  __e.option_byte
+                                  000000c4         0   none ,g         * 
+  __s.monitor1
+                                  000000ce         0   none ,g         * 
+  __e.monitor1
+                                  000000d8         0   none ,g         * 
+  __s.rrm
+                                  000ff700         0   none ,g         * 
+  __e.rrm
+                                  000ff704         0   none ,g         * 
+  __s.security_id
+                                  000000c4         0   none ,g         * 
+  __e.security_id
+                                  000000ce         0   none ,g         * 
+  __s.vect
+                                  00000000         0   none ,g         * 
+  __e.vect
+                                  00000080         0   none ,g         * 
+  __RAM_ADDR_START
+                                  000ff700         0   none ,g         * 
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         * 
+  __STACK_ADDR_START
+                                  000ffe20         0   none ,g         * 
+  __STACK_ADDR_END
+                                  000ffa3e         0   none ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

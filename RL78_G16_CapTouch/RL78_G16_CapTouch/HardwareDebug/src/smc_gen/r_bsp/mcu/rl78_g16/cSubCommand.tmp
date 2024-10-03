@@ -1,0 +1,29 @@
+-cpu=S2
+-use_mda=not_use
+-c
+-dev="C:/Users/DELL/.eclipse/com.renesas.platform_711179927/DebugComp/RL78/RL78/Common/DR5F121BC.DVF"
+-MAKEUD="C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\HardwareDebug\src\smc_gen\r_bsp\mcu\rl78_g16"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\general"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\r_config"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\r_bsp"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\r_pincfg"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_UART0"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\rm_touch"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\HardwareDebug\src\smc_gen\r_ctsu"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\r_ctsu"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\qe_gen"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_UART1"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_0"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_PORT"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_3"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_2"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_1"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_UART2"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_4"
+-I "C:\Users\DELL\e2_studio\workspace\RL78_G16_CapTouch\RL78_G16_CapTouch\src\smc_gen\Config_TAU0_5"
+-D QE_TOUCH_CONFIGURATION
+-character_set=utf8
+-lang=c99
+-g
+-Onothing
